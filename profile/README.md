@@ -3,7 +3,7 @@
 > **Department of Computer Science, Faculty of Science**  
 > Srinakharinwirot University (SWU), Bangkok, Thailand
 
-**VRU-AI SWU** is a Virtual Research Unit within the Computer Science department at Srinakharinwirot University. We apply artificial intelligence, machine learning, and modern software engineering to drive transformation across four pillars — helping our department, our students, and our stakeholders move further and faster through intelligent systems.
+**VRU-AI SWU** is a Virtual Research Unit within the department of computer science, faculty of science, Srinakharinwirot University. We apply artificial intelligence, machine learning, and modern software engineering to drive transformation across four pillars — helping our department, our students, and our stakeholders move further and faster through intelligent systems.
 
 ---
 
