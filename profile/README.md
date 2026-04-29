@@ -63,7 +63,7 @@ To modernize the CS department at SWU by building practical AI-powered systems t
   <tr>
     <td width="180" align="center" valign="top">
       <img src="https://raw.githubusercontent.com/SWU-CS-Intelligence-Lab/.github/main/logos/iris.svg" width="120"/><br/><br/>
-      <strong>IRIS</strong><br/>
+      <a href="https://github.com/VRU-AI-SWU/iris"><strong>IRIS</strong></a><br/>
       <em>Skill Gap Intelligence System</em>
     </td>
     <td valign="top">
