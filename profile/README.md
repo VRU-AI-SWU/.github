@@ -71,7 +71,7 @@ To modernize the CS department at SWU by building practical AI-powered systems t
       An agentic AI system that quantifies the gap between what an academic programme teaches and what the current job market demands. IRIS ingests curriculum documents, scrapes job postings across career paths and business sectors, and applies NLP and statistical models (cosine similarity, KL divergence, chi-square) to surface under-supplied and over-supplied skills — enabling data-driven curriculum decisions.<br/><br/>
       <ul>
         <li><strong>Key Features:</strong> Multi-format curriculum ingestion (PDF, DOCX, HTML, YAML/JSON), job market harvesting agent, standardized skill taxonomy, gap scoring engine, prioritized curriculum recommendations, trend analysis</li>
-        <li><strong>Stack:</strong> Next.js · FastAPI · LangGraph/LangChain · Ollama (Gemma 3) · spaCy · scikit-learn · Scrapy · Docker</li>
+        <li><strong>Stack:</strong> Next.js · FastAPI · LangGraph/LangChain · LM Studio (gemma-4-31b-it) · spaCy · scikit-learn · Scrapy · Docker</li>
       </ul>
     </td>
   </tr>
@@ -87,7 +87,7 @@ To modernize the CS department at SWU by building practical AI-powered systems t
       An agentic RAG chatbot embedded in the CS department's website (<code>cs.science.swu.ac.th</code>) to answer prospective students' questions about admissions (TCAS criteria, application rounds, curriculum, career paths). Built with a <strong>multi-agent architecture</strong> (Router · Admission · Academic agents), it also serves as a live teaching project for CS TAs to learn AI architecture, tool calling, and containerized deployment.<br/><br/>
       <ul>
         <li><strong>Key Features:</strong> Embedded WordPress widget, multi-agent orchestration (LangGraph), RAG over department knowledge base, session memory, on-premise GPU deployment</li>
-        <li><strong>Stack:</strong> HTML/JS widget · FastAPI · LangGraph · Ollama (Qwen) · ChromaDB · BGE-m3 embeddings · Redis · Docker</li>
+        <li><strong>Stack:</strong> HTML/JS widget · FastAPI · LangGraph · LM Studio (qwen3.6-27b) · ChromaDB · BGE-m3 embeddings · Redis · Docker</li>
       </ul>
     </td>
   </tr>
@@ -108,10 +108,10 @@ Projects in this section are independent studies by lab advisees. They are built
     </td>
     <td valign="top">
       <strong>Type:</strong> Independent Study &nbsp;·&nbsp; <strong>Pillar:</strong> Service Excellence · Operation Excellence<br/><br/>
-      An AI-powered market intelligence tool for hotel revenue teams. HOMA ingests raw room listings from OTA websites, uses a local LLM (Gemma 3 via Ollama) to standardize messy room descriptions against a user-defined schema, then applies K-Means clustering and PCA to map competitive market positioning — all visualized on an interactive market map with AI-generated cluster insights.<br/><br/>
+      An AI-powered market intelligence tool for hotel revenue teams. HOMA ingests raw room listings from OTA websites, uses a local LLM (gemma-4-31b-it via LM Studio) to standardize messy room descriptions against a user-defined schema, then applies K-Means clustering and PCA to map competitive market positioning — all visualized on an interactive market map with AI-generated cluster insights.<br/><br/>
       <ul>
         <li><strong>Key Features:</strong> User-defined feature schema, LLM standardization (fully local, no cloud API), K-Means clustering, PCA market map, AI-generated cluster summaries, real-time SSE progress streaming</li>
-        <li><strong>Stack:</strong> Next.js · FastAPI · Ollama (Gemma 3) · scikit-learn · Recharts · Docker</li>
+        <li><strong>Stack:</strong> Next.js · FastAPI · LM Studio (gemma-4-31b-it) · scikit-learn · Recharts · Docker</li>
         <li><strong>Location:</strong> <code>student-showcases/homa/</code></li>
       </ul>
     </td>
@@ -137,7 +137,7 @@ The `swu-courses/` repository contains lecture notes and tutorials authored for 
 
 All lab projects share a common philosophy and technology foundation:
 
-- **Local-first AI** — LLMs run on-premise via [Ollama](https://ollama.com/), keeping data private and eliminating cloud API costs
+- **Local-first AI** — LLMs run on-premise via [LM Studio](https://lmstudio.ai/), keeping data private and eliminating cloud API costs
 - **Containerized everything** — Docker Compose for reproducible, one-command deployment
 - **Modern full-stack** — Next.js (App Router) frontends, FastAPI backends, async PostgreSQL, Redis queues
 - **Agent-native design** — LangGraph/LangChain in every system that requires reasoning, planning, or multi-step tool use
@@ -157,7 +157,7 @@ docker compose up --build
 
 Most projects require:
 - Docker Engine ≥ 24 with Compose v2
-- Ollama installed locally (for LLM-dependent services)
+- LM Studio running locally with the required model loaded (for LLM-dependent services)
 - A `.env` file configured from the provided `.env.example`
 
 ---
@@ -166,9 +166,9 @@ Most projects require:
 
 | | |
 |-|-|
-| **Lab** | SWU-CS Intelligence Lab |
+| **Lab** | VRU-AI SWU |
 | **Department** | Computer Science, Faculty of Science, Srinakharinwirot University |
-| **GitHub Organization** | [github.com/SWU-CS-Intelligence-Lab](https://github.com/VRU-AI-SWU) |
+| **GitHub Organization** | [github.com/VRU-AI-SWU](https://github.com/VRU-AI-SWU) |
 
 ---
 
