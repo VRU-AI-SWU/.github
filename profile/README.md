@@ -68,10 +68,10 @@ To modernize the CS department at SWU by building practical AI-powered systems t
     </td>
     <td valign="top">
       <strong>Pillar:</strong> Research Excellence · Learning Excellence<br/><br/>
-      An agentic AI system that quantifies the gap between what an academic programme teaches and what the current job market demands. IRIS ingests curriculum documents, scrapes job postings across career paths and business sectors, and applies NLP and statistical models (cosine similarity, KL divergence, chi-square) to surface under-supplied and over-supplied skills — enabling data-driven curriculum decisions.<br/><br/>
+      An agentic AI system that quantifies the gap between what an academic programme teaches and what the current job market demands. IRIS ingests curriculum documents, scrapes job postings across career paths and business sectors, and applies NLP and statistical models (KL divergence, revealed comparative advantage, cosine similarity) to surface under-supplied and over-supplied skills — enabling data-driven curriculum decisions.<br/><br/>
       <ul>
         <li><strong>Key Features:</strong> Multi-format curriculum ingestion (PDF, DOCX, HTML, YAML/JSON), job market harvesting agent, standardized skill taxonomy, gap scoring engine, prioritized curriculum recommendations, trend analysis</li>
-        <li><strong>Stack:</strong> Next.js · FastAPI · LangGraph/LangChain · LM Studio (gemma-4-31b-it) · spaCy · scikit-learn · Scrapy · Docker</li>
+        <li><strong>Stack:</strong> Next.js · Rust/Axum API · Rust/Apalis worker · Python/HDBSCAN sidecar · PostgreSQL · Redis · LM Studio/Ollama (gemma-4-31b-it) · Docker</li>
       </ul>
     </td>
   </tr>
@@ -88,6 +88,51 @@ To modernize the CS department at SWU by building practical AI-powered systems t
       <ul>
         <li><strong>Key Features:</strong> Embedded WordPress widget, multi-agent orchestration (LangGraph), RAG over department knowledge base, session memory, on-premise GPU deployment</li>
         <li><strong>Stack:</strong> HTML/JS widget · FastAPI · LangGraph · LM Studio (qwen3.6-27b) · ChromaDB · BGE-m3 embeddings · Redis · Docker</li>
+      </ul>
+    </td>
+  </tr>
+  <tr><td colspan="2"><br/></td></tr>
+  <tr>
+    <td width="180" align="center" valign="top">
+      <strong>Athenos</strong><br/>
+      <em>Collaborative AI Workspace</em>
+    </td>
+    <td valign="top">
+      <strong>Pillar:</strong> Learning Excellence · Operation Excellence<br/><br/>
+      An open-source, self-hosted collaborative AI workspace — an institutional alternative to cloud tools like Claude Cowork. Athenos runs open-weight models on the department's own GPU server, so every student, faculty member, and staff member gets a capable AI workspace at zero per-seat cost while sensitive documents never leave the building. It layers a centralized multi-user backend, a lightweight LMS structure (course → assignment → workspace), shared real-time group sessions, and instructor visibility over a cross-platform desktop and web client. Built to be adopted by other Thai universities facing the same budget and data-sovereignty constraints.<br/><br/>
+      <ul>
+        <li><strong>Key Features:</strong> Centralized multi-user backend, course/assignment workspaces, real-time shared group AI sessions, instructor read-only visibility, Google Workspace OAuth (+ generic OIDC), Thai-language UI, desktop + web from a single codebase</li>
+        <li><strong>Stack:</strong> Tauri 2 · SolidJS · Rust/Axum · OpenAI-compatible inference (vLLM/Ollama) · Qwen2.5-32B · MCP</li>
+      </ul>
+    </td>
+  </tr>
+  <tr><td colspan="2"><br/></td></tr>
+  <tr>
+    <td width="180" align="center" valign="top">
+      <strong>Prostate Cancer mpMRI</strong><br/>
+      <em>PI-RADS Analysis Pipeline</em>
+    </td>
+    <td valign="top">
+      <strong>Pillar:</strong> Research Excellence<br/><br/>
+      An end-to-end pipeline for prostate cancer assessment from multiparametric MRI (mpMRI), developed with a radiologist domain expert. It spans automated prostate-zone and lesion segmentation from axial T2-weighted MRI, multi-modal image registration onto DWI/ADC/DCE sequences, and radiomics-based estimation of the PI-RADS v2.1 score per lesion.<br/><br/>
+      <ul>
+        <li><strong>Key Features:</strong> Zone/lesion segmentation (nnU-Net), intra-patient mpMRI registration (ANTs), PI-RADS radiomic feature extraction, per-lesion PI-RADS modelling; clinically annotated cohort (134 annotated + 65 full mpMRI cases)</li>
+        <li><strong>Stack:</strong> Python · nnU-Net · ANTs · PyRadiomics · scikit-learn / XGBoost · PyTorch</li>
+      </ul>
+    </td>
+  </tr>
+  <tr><td colspan="2"><br/></td></tr>
+  <tr>
+    <td width="180" align="center" valign="top">
+      <strong>Stroke</strong><br/>
+      <em>LVO Detection &amp; Stroke Prediction</em>
+    </td>
+    <td valign="top">
+      <strong>Pillar:</strong> Research Excellence<br/><br/>
+      An AI pipeline for automated detection of Large Vessel Occlusion (LVO) from CT Angiography (CTA), aimed at faster triage and time-to-decision in acute ischemic stroke, with a longer-term goal of stroke prediction from multimodal imaging (NCCT, CTA, DWI/ADC, FLAIR, SWI). Developed with a neuroradiology domain expert on a multi-cohort CT/CTA/MRI dataset.<br/><br/>
+      <ul>
+        <li><strong>Key Features:</strong> LVO present/absent classification from CTA, thrombus/infarct segmentation, multimodal stroke characterisation; 241 CT-CTA + 307 CT-MRI annotated cases</li>
+        <li><strong>Stack:</strong> Python · PyTorch · CNN / ViT classifiers · medical image segmentation · DICOM/NRRD pipeline</li>
       </ul>
     </td>
   </tr>
@@ -137,10 +182,10 @@ The `swu-courses/` repository contains lecture notes and tutorials authored for 
 
 All lab projects share a common philosophy and technology foundation:
 
-- **Local-first AI** — LLMs run on-premise via [LM Studio](https://lmstudio.ai/), keeping data private and eliminating cloud API costs
+- **Local-first AI** — open-weight LLMs run on the department's own GPU server via [LM Studio](https://lmstudio.ai/), Ollama, or vLLM, keeping data private and eliminating cloud API costs
 - **Containerized everything** — Docker Compose for reproducible, one-command deployment
-- **Modern full-stack** — Next.js (App Router) frontends, FastAPI backends, async PostgreSQL, Redis queues
-- **Agent-native design** — LangGraph/LangChain in every system that requires reasoning, planning, or multi-step tool use
+- **Right tool for the job** — Next.js + FastAPI for web platforms, Rust (Axum) for high-throughput services, Tauri for cross-platform desktop, and PyTorch for deep-learning research
+- **Agent-native design** — LangGraph/LangChain and MCP wherever a system requires reasoning, planning, or multi-step tool use
 - **Research-grade rigor** — Statistical evaluation (confidence intervals, hypothesis testing) built into platforms, not bolted on
 
 ---
