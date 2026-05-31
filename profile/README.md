@@ -94,6 +94,7 @@ To modernize the CS department at SWU by building practical AI-powered systems t
   <tr><td colspan="2"><br/></td></tr>
   <tr>
     <td width="180" align="center" valign="top">
+      <img src="https://raw.githubusercontent.com/VRU-AI-SWU/.github/main/logos/athenos.svg" width="120"/><br/><br/>
       <strong>Athenos</strong><br/>
       <em>Collaborative AI Workspace</em>
     </td>
@@ -109,6 +110,7 @@ To modernize the CS department at SWU by building practical AI-powered systems t
   <tr><td colspan="2"><br/></td></tr>
   <tr>
     <td width="180" align="center" valign="top">
+      <img src="https://raw.githubusercontent.com/VRU-AI-SWU/.github/main/logos/prostate.svg" width="120"/><br/><br/>
       <strong>Prostate Cancer mpMRI</strong><br/>
       <em>PI-RADS Analysis Pipeline</em>
     </td>
@@ -124,6 +126,7 @@ To modernize the CS department at SWU by building practical AI-powered systems t
   <tr><td colspan="2"><br/></td></tr>
   <tr>
     <td width="180" align="center" valign="top">
+      <img src="https://raw.githubusercontent.com/VRU-AI-SWU/.github/main/logos/stroke.svg" width="120"/><br/><br/>
       <strong>Stroke</strong><br/>
       <em>LVO Detection &amp; Stroke Prediction</em>
     </td>

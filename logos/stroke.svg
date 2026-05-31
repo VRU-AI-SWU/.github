@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="str" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F4576E"/>
+      <stop offset="1" stop-color="#B11A3A"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="url(#str)"/>
+  <!-- brain -->
+  <circle cx="128" cy="110" r="62" fill="#fff"/>
+  <!-- longitudinal fissure -->
+  <line x1="128" y1="50" x2="128" y2="170" stroke="url(#str)" stroke-width="6" stroke-linecap="round"/>
+  <!-- gyri -->
+  <path d="M92 90 q15 -11 30 0 t30 0" fill="none" stroke="url(#str)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M88 124 q16 -11 32 0 t32 0" fill="none" stroke="url(#str)" stroke-width="5" stroke-linecap="round"/>
+  <!-- vessel + occlusion marker -->
+  <path d="M82 198 C110 184 130 202 168 184" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="122" cy="194" r="14" fill="url(#str)" stroke="#fff" stroke-width="5"/>
+</svg>
