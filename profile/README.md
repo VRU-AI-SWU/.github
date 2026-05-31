@@ -17,10 +17,10 @@ To modernize the CS department at SWU by building practical AI-powered systems t
 
 | Pillar | Goal |
 |--------|------|
-| <div align="center"><img src="https://raw.githubusercontent.com/SWU-CS-Intelligence-Lab/.github/main/logos/learning-excellence.png" width="40"/><br/>**Learning Excellence**</div> | Equip students with hands-on AI/ML tools and up-to-date curricula that reflect real-world skill demands |
-| <div align="center"><img src="https://raw.githubusercontent.com/SWU-CS-Intelligence-Lab/.github/main/logos/operation-excellence.png" width="40"/><br/>**Operation Excellence**</div> | Automate and optimize departmental processes through data-driven and AI-assisted workflows |
-| <div align="center"><img src="https://raw.githubusercontent.com/SWU-CS-Intelligence-Lab/.github/main/logos/researech-excellence.png" width="40"/><br/>**Research Excellence**</div> | Build and share open platforms that accelerate empirical research, particularly in machine learning and few-shot learning |
-| <div align="center"><img src="https://raw.githubusercontent.com/SWU-CS-Intelligence-Lab/.github/main/logos/service%20excellence.png" width="40"/><br/>**Service Excellence**</div> | Deliver intelligent front-facing services — chatbots, analytics tools — that better serve students, faculty, and industry partners |
+| <div align="center"><img src="https://raw.githubusercontent.com/VRU-AI-SWU/.github/main/logos/learning-excellence.png" width="40"/><br/>**Learning Excellence**</div> | Equip students with hands-on AI/ML tools and up-to-date curricula that reflect real-world skill demands |
+| <div align="center"><img src="https://raw.githubusercontent.com/VRU-AI-SWU/.github/main/logos/operation-excellence.png" width="40"/><br/>**Operation Excellence**</div> | Automate and optimize departmental processes through data-driven and AI-assisted workflows |
+| <div align="center"><img src="https://raw.githubusercontent.com/VRU-AI-SWU/.github/main/logos/researech-excellence.png" width="40"/><br/>**Research Excellence**</div> | Build and share open platforms that accelerate empirical research, particularly in machine learning and few-shot learning |
+| <div align="center"><img src="https://raw.githubusercontent.com/VRU-AI-SWU/.github/main/logos/service%20excellence.png" width="40"/><br/>**Service Excellence**</div> | Deliver intelligent front-facing services — chatbots, analytics tools — that better serve students, faculty, and industry partners |
 
 ---
 
@@ -29,7 +29,7 @@ To modernize the CS department at SWU by building practical AI-powered systems t
 <table>
   <tr>
     <td width="180" align="center" valign="top">
-      <img src="https://raw.githubusercontent.com/SWU-CS-Intelligence-Lab/.github/main/logos/chiron.svg" width="120"/><br/><br/>
+      <img src="https://raw.githubusercontent.com/VRU-AI-SWU/.github/main/logos/chiron.svg" width="120"/><br/><br/>
       <strong>Chiron</strong><br/>
       <em>AI Learning Sandbox</em>
     </td>
@@ -46,7 +46,7 @@ To modernize the CS department at SWU by building practical AI-powered systems t
   <tr><td colspan="2"><br/></td></tr>
   <tr>
     <td width="180" align="center" valign="top">
-      <img src="https://raw.githubusercontent.com/SWU-CS-Intelligence-Lab/.github/main/logos/heimdall.svg" width="120"/><br/><br/>
+      <img src="https://raw.githubusercontent.com/VRU-AI-SWU/.github/main/logos/heimdall.svg" width="120"/><br/><br/>
       <strong>Heimdall</strong><br/>
       <em>Few-Shot Learning Platform</em>
     </td>
@@ -62,7 +62,7 @@ To modernize the CS department at SWU by building practical AI-powered systems t
   <tr><td colspan="2"><br/></td></tr>
   <tr>
     <td width="180" align="center" valign="top">
-      <img src="https://raw.githubusercontent.com/SWU-CS-Intelligence-Lab/.github/main/logos/iris.svg" width="120"/><br/><br/>
+      <img src="https://raw.githubusercontent.com/VRU-AI-SWU/.github/main/logos/iris.svg" width="120"/><br/><br/>
       <a href="https://github.com/VRU-AI-SWU/iris"><strong>IRIS</strong></a><br/>
       <em>Skill Gap Intelligence System</em>
     </td>
@@ -78,7 +78,7 @@ To modernize the CS department at SWU by building practical AI-powered systems t
   <tr><td colspan="2"><br/></td></tr>
   <tr>
     <td width="180" align="center" valign="top">
-      <img src="https://raw.githubusercontent.com/SWU-CS-Intelligence-Lab/.github/main/logos/janus.svg" width="120"/><br/><br/>
+      <img src="https://raw.githubusercontent.com/VRU-AI-SWU/.github/main/logos/janus.svg" width="120"/><br/><br/>
       <strong>Janus</strong><br/>
       <em>Agentic Admission Chatbot</em>
     </td>
@@ -147,7 +147,7 @@ Projects in this section are independent studies by lab advisees. They are built
 <table>
   <tr>
     <td width="180" align="center" valign="top">
-      <img src="https://raw.githubusercontent.com/SWU-CS-Intelligence-Lab/.github/main/logos/homa.svg" width="120"/><br/><br/>
+      <img src="https://raw.githubusercontent.com/VRU-AI-SWU/.github/main/logos/homa.svg" width="120"/><br/><br/>
       <strong>HOMA</strong><br/>
       <em>Hotel Market Analytics</em>
     </td>
